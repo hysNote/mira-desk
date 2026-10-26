@@ -1,0 +1,102 @@
+{
+  "comic": {
+    "wall_pixels": 324223,
+    "floor_pixels": 334167,
+    "window_pixels": 452781,
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 695084
+  },
+  "noir": {
+    "wall_pixels": 324223,
+    "floor_pixels": 334167,
+    "window_pixels": 452781,
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 1036308
+  },
+  "pop": {
+    "wall_pixels": 324223,
+    "floor_pixels": 334167,
+    "window_pixels": 452781,
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 854986
+  },
+  "anime": {
+    "wall_pixels": 324223,
+    "floor_pixels": 334167,
+    "window_pixels": 452781,
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 492246
+  },
+  "watercolor": {
+    "wall_pixels": 324223,
+    "floor_pixels": 334167,
+    "window_pixels": 452781,
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 622290
+  },
+  "punk": {
+    "wall_pixels": 324223,
+    "floor_pixels": 334167,
+    "window_pixels": 452781,
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 1311346
+  },
+  "neon": {
+    "wall_pixels": 324223,
+    "floor_pixels": 334167,
+    "window_pixels": 452781,
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 411062
+  },
+  "sketch": {
+    "wall_pixels": 324223,
+    "floor_pixels": 334167,
+    "window_pixels": 452781,
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 1087598
+  },
+  "pixel": {
+    "wall_pixels": 324223,
+    "floor_pixels": 334167,
+    "window_pixels": 452781,
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 319732
+  },
+  "void": {
+    "wall_pixels": 324223,
+    "floor_pixels": 334167,
+    "window_pixels": 452781,
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 620054
+  }
+}
