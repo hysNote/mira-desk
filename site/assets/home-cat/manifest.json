@@ -1,0 +1,26 @@
+{
+  "crop": [
+    218,
+    689,
+    677,
+    983
+  ],
+  "size": [
+    1920,
+    1080
+  ],
+  "styles": [
+    "original",
+    "comic",
+    "noir",
+    "pop",
+    "anime",
+    "watercolor",
+    "punk",
+    "neon",
+    "sketch",
+    "pixel",
+    "void"
+  ],
+  "preserved": "../styles/"
+}
