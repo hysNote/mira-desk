@@ -1,0 +1,68 @@
+{
+  "frames": 25,
+  "angle_degrees": 90,
+  "duration_ms": 2900,
+  "crop": [
+    339,
+    409,
+    578,
+    661
+  ],
+  "canvas": [
+    1920,
+    1080
+  ],
+  "moving_objects": [
+    "carousel hanging rod",
+    "carousel photo hook",
+    "carousel photo frame",
+    "carousel photo recess",
+    "carousel hanging photograph",
+    "carousel photo caption",
+    "carousel hanging rod.001",
+    "carousel photo hook.001",
+    "carousel photo frame.001",
+    "carousel photo recess.001",
+    "carousel hanging photograph.001",
+    "carousel photo caption.001",
+    "carousel hanging rod.002",
+    "carousel photo hook.002",
+    "carousel photo frame.002",
+    "carousel photo recess.002",
+    "carousel hanging photograph.002",
+    "carousel photo caption.002",
+    "carousel hanging rod.003",
+    "carousel photo hook.003",
+    "carousel photo frame.003",
+    "carousel photo recess.003",
+    "carousel hanging photograph.003",
+    "carousel photo caption.003"
+  ],
+  "pivot": [
+    -1.434999942779541,
+    0.3100000023841858,
+    0.75
+  ],
+  "stationary": [
+    "canopy",
+    "finial",
+    "central column",
+    "pedestal"
+  ],
+  "columns": 5,
+  "width": 239,
+  "height": 252,
+  "styles": [
+    "original",
+    "comic",
+    "noir",
+    "pop",
+    "anime",
+    "watercolor",
+    "punk",
+    "neon",
+    "sketch",
+    "pixel",
+    "void"
+  ]
+}
