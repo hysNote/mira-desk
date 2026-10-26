@@ -1,0 +1,20 @@
+Bicolor Cat
+Author: kenchoo (https://sketchfab.com/kenchoo)
+Source: https://sketchfab.com/3d-models/bicolor-cat-e623a618ca344a8393d7ba4d63ec23cf
+License: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+Public download mirror: https://github.com/code4fukui/vr-cats/blob/main/bicolor_cat.glb
+
+Toon Cat FREE
+Author: Omabuarts Studio (https://sketchfab.com/omabuarts)
+Source: https://sketchfab.com/3d-models/toon-cat-free-b2bd1ee7858444bda366110a2d960386
+License: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+Public download mirror: https://github.com/DevTakao/threejs-cat/blob/master/assets/models/toon_cat_free.glb
+
+Original GLB files are unchanged. This preview changes placement, normalized size,
+lighting and optionally replaces surface materials with untextured clay.
+Embedded creator animation clips are played unchanged; Toon Cat loops five times.
+Neither asset includes a complete lie/stretch/lie sequence. Neither is presented
+as Mira's actual American Shorthair or as an original model created for this site.
+
+Three.js 0.169.0: MIT license at ../../vendor/three/LICENSE.
+GLTFLoader import path adjusted to local vendored BufferGeometryUtils.js.
