@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f2f0e7">
+  <meta name="description" content="Mira 的窗边工位。认识一个做产品、创业，也不断探索生活的人。">
+  <title>Mira · 窗边工位</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="index.html" aria-label="回到 Mira 的桌面">mira<span>↗</span></a>
+    <span class="edition">A DESK, A LITTLE OF ME.</span>
+    <nav aria-label="主导航"><button class="quiet" id="hint-toggle" aria-pressed="true">物件提示 <span>开</span></button><button class="resume-shortcut" data-open="resume">阅读履历 <span>↗</span></button></nav>
+  </header>
+  <main>
+    <div class="intro-strip"><div><span class="eyebrow">WELCOME TO MY LITTLE CORNER</span><h1>做产品，也探索生活。</h1></div><p>随手点开一件东西，<br>慢慢认识我。</p></div>
+    <section class="scene-shell" aria-label="Mira 的可交互桌面">
+      <div id="scene" class="scene">
+        <img id="desk-image" src="assets/scene.webp" alt="Mira 的窗边书桌：左墙毛毡照片板，双屏、旋转木马、小猫和奖杯；橙色猫咪鼠标垫、相机、浅蓝黄扣布钱包、茶盘、银灰小垃圾桶、菠萝屋笔筒与手写笔记本。右侧天堂鸟，桌下绿色花朵地毯。" draggable="false">
+        <div class="scene-vignette" aria-hidden="true"></div>
+        <div id="pins" class="pins"></div>
+        <span id="hover-label" class="hover-label" hidden></span>
+      </div>
+      <p id="scene-status" class="scene-status" role="status">正在打开窗边工位…</p>
+      <div class="scene-caption"><span><i></i> 一个普通的晴天</span><span>点击物件，展开故事</span></div>
+    </section>
+    <nav id="object-nav" class="object-nav" aria-label="桌面内容入口"></nav>
+    <footer><span>产品经理 / 海外创业 / 内容创作</span><span>MIRA’S DESK · FIRST EDITION</span></footer>
+  </main>
+  <dialog id="panel" aria-labelledby="panel-title">
+    <div class="panel-top"><button id="panel-close" class="back-button" aria-label="关闭内容，回到桌面">← 回到桌面</button><span id="panel-number"></span></div>
+    <div class="panel-heading"><p class="eyebrow" id="panel-kicker"></p><h2 id="panel-title"></h2><p id="panel-subtitle"></p></div>
+    <div id="panel-content"></div>
+    <nav id="panel-nav" class="panel-nav" aria-label="继续探索"></nav>
+  </dialog>
+  <dialog id="lightbox" aria-labelledby="lightbox-title">
+    <header><div><span class="eyebrow" id="lightbox-count"></span><h2 id="lightbox-title"></h2></div><button id="lightbox-close" class="icon-button" aria-label="关闭照片">×</button></header>
+    <div class="photo-stage"><button id="photo-prev" class="photo-arrow" aria-label="上一张照片">←</button><img id="lightbox-image" alt=""><button id="photo-next" class="photo-arrow" aria-label="下一张照片">→</button></div>
+    <p id="lightbox-caption"></p>
+  </dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
