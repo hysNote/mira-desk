@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f2f0e7">
+  <meta name="description" content="Mira 的窗边工位。认识一个做产品、创业，也不断探索生活的人。">
+  <title>Mira · 窗边工位</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="./" aria-label="回到 Mira 的桌面">mira<span>↗</span></a>
+    <span class="edition">A DESK, A LITTLE OF ME.</span>
+    <nav aria-label="主导航"><label class="style-switch" for="style-select"><span>风格切换</span><select id="style-select" aria-label="风格切换"><option value="original">原版 · 珠光日常</option></select></label><button class="quiet" id="hint-toggle" aria-pressed="true">物件提示 <span>开</span></button><button class="resume-shortcut" data-open="resume">阅读履历 <span>↗</span></button></nav>
+    <span id="style-status" role="status" aria-live="polite"></span>
+  </header>
+  <nav id="window-controls" class="window-controls" aria-label="窗外场景">
+    <span id="window-current" aria-live="polite">窗外随画风切换</span>
+    <details id="audio-panel" class="audio-panel">
+      <summary>♫ 音乐试听</summary>
+      <div class="audio-sheet">
+        <div class="audio-heading"><div><small>DESK RADIO · 三种声音提案</small><h2>给工位一点音乐</h2></div><button id="music-close" aria-label="收起音乐试听">×</button></div>
+        <p class="audio-intro">点一个方向，听听它和桌面放在一起的感觉。</p>
+        <div id="music-choices" class="music-choices" role="group" aria-label="试听方向"></div>
+        <div class="music-actions"><button id="music-toggle" aria-pressed="false">播放音乐</button><button id="music-follow" aria-pressed="true">随画风搭配</button></div>
+        <p id="music-mode">随画风搭配</p>
+        <div class="sound-slider"><label for="music-volume">音乐</label><input id="music-volume" type="range" min="0" max="100" value="32"><output id="music-volume-value" for="music-volume">32%</output></div>
+        <div class="ambient-controls"><button id="window-sound" aria-pressed="false" disabled>环境声 关</button><div class="sound-slider"><label for="ambient-volume">环境声</label><input id="ambient-volume" type="range" min="0" max="100" value="25"><output id="ambient-volume-value" for="ambient-volume">25%</output></div><p id="ambient-note"></p></div>
+        <p id="music-status" role="status">点播放开始试听</p>
+        <p class="music-credit"><a id="music-source" target="_blank" rel="noopener"><span id="music-title"></span></a> · Kevin MacLeod<br><a href="https://incompetech.com" target="_blank" rel="noopener">incompetech.com</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · 播放时调整音量、淡入淡出与循环。<br><a href="assets/audio/music/credits.html" target="_blank" rel="noopener">全部曲目与授权 ↗</a></p>
+      </div>
+    </details>
+    <a href="preserved-window/index.html" target="_blank" rel="noopener">保留版 ↗</a>
+    <span id="window-status" role="status"></span>
+  </nav>
+  <section id="transition-compare" class="transition-compare" aria-label="比较水波涟漪与保留的 A 版" hidden><div class="transition-options"><button data-transition="glitch" aria-pressed="false">A · 方块错版</button><button data-transition="ripple" aria-pressed="true">B · 水波涟漪</button><button id="transition-replay">再看一次 ↻</button></div><p id="transition-description"></p><small>每次以同一组「漫画 → 水彩」比较；也可以直接按桌上的铃。</small></section>
+  <audio id="bell-audio" preload="none" hidden></audio>
+  <main>
+    <div class="intro-strip"><div><span class="eyebrow">WELCOME TO MY LITTLE CORNER</span><h1>做产品，也探索生活。</h1></div><p>随手点开一件东西，<br>慢慢认识我。</p></div>
+    <section class="scene-shell" aria-label="Mira 的可交互桌面">
+      <div id="scene" class="scene">
+        <img id="desk-image" src="assets/scene.webp" alt="Mira 的窗边书桌：左墙毛毡照片板，双屏、旋转木马、小猫和奖杯；橙色猫咪鼠标垫、相机、浅蓝黄扣布钱包、茶盘、银灰小垃圾桶、菠萝屋笔筒与手写笔记本；显示器增高架右侧有黄红色换风格小铃。右侧天堂鸟，桌下绿色花朵地毯。" draggable="false">
+        <div class="scene-vignette" aria-hidden="true"></div>
+        <canvas id="window-scene" aria-hidden="true" hidden></canvas>
+        <canvas id="carousel-motion" aria-hidden="true" hidden></canvas>
+        <canvas id="home-cat" aria-hidden="true" hidden></canvas>
+        <div id="pins" class="pins"></div>
+        <canvas id="hover-outline" class="scene-overlay" aria-hidden="true"></canvas>
+        <canvas id="style-transition" class="scene-overlay transition-overlay" aria-hidden="true" hidden></canvas>
+      </div>
+      <p id="scene-status" class="scene-status" role="status">正在打开窗边工位…</p>
+      <p id="carousel-status" class="carousel-status" role="status"></p>
+      <div class="scene-caption"><span><i></i> <b id="style-name">原版 · 珠光日常</b></span><span>点击物件，展开故事</span></div>
+    </section>
+    <nav id="object-nav" class="object-nav" aria-label="桌面内容入口"></nav>
+    <footer><span>产品经理 / 海外创业 / 内容创作</span><span>MIRA’S DESK · FIRST EDITION</span></footer>
+  </main>
+  <span id="hover-label" class="hover-label" hidden></span>
+  <dialog id="panel" aria-labelledby="panel-title">
+    <div class="panel-top"><button id="panel-close" class="back-button" aria-label="关闭内容，回到桌面">← 回到桌面</button><span id="panel-number"></span></div>
+    <div class="panel-heading"><p class="eyebrow" id="panel-kicker"></p><h2 id="panel-title"></h2><p id="panel-subtitle"></p></div>
+    <div id="panel-content"></div>
+    <nav id="panel-nav" class="panel-nav" aria-label="继续探索"></nav>
+  </dialog>
+  <dialog id="lightbox" aria-labelledby="lightbox-title">
+    <header><div><span class="eyebrow" id="lightbox-count"></span><h2 id="lightbox-title"></h2></div><button id="lightbox-close" class="icon-button" aria-label="关闭照片">×</button></header>
+    <div class="photo-stage"><button id="photo-prev" class="photo-arrow" aria-label="上一张照片">←</button><img id="lightbox-image" alt=""><button id="photo-next" class="photo-arrow" aria-label="下一张照片">→</button></div>
+    <p id="lightbox-caption"></p>
+  </dialog>
+  <script type="importmap">{"imports":{"three":"./vendor/three/three.module.js"}}</script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>摸摸美短 · Mira 的猫咪动作小样</title><link rel="stylesheet" href="cat-preview.css"></head>
+<body>
+<header><a href="index.html">mira ↗</a><span>一位还没穿上花纹的小伙伴</span><a class="back" href="index.html">回到书桌</a></header>
+<main>
+ <div class="intro"><div><p class="eyebrow">AMERICAN SHORTHAIR / MOTION STUDY 01</p><h1>嘘，轻轻摸一下。</h1><p>它会醒一醒，伸个懒腰，再慢慢窝回去。</p></div><div class="views" role="group" aria-label="观察视角"><button id="close-view" aria-pressed="true">模型近景</button><button id="desk-view" aria-pressed="false">桌面视角</button></div></div>
+ <div id="stage" class="stage close-view">
+  <img id="desk-still" src="assets/cat-motion/desk-idle.webp" alt="美短灰模窝在 Mira 书桌左侧">
+  <video id="desk-motion" muted playsinline preload="auto" aria-hidden="true" poster="assets/cat-motion/desk-poster.webp"><source src="assets/cat-motion/beauty.mp4" type="video/mp4"></video>
+  <video id="close-motion" muted playsinline preload="auto" aria-label="美短起身伸懒腰的 Blender 动作" poster="assets/cat-motion/close-poster.webp"><source src="assets/cat-motion/close.mp4" type="video/mp4"></video>
+  <button id="pet-target" aria-label="轻摸小猫，播放伸懒腰动作"><span>摸摸我</span></button>
+  <span class="clay-label">素色模型 · 暂无花纹与毛发贴图</span><span id="motion-status" role="status">窝着休息</span>
+ </div>
+ <div class="transport"><button id="pet-play" class="primary" disabled>正在准备动作…</button><button id="pause-play" disabled>暂停</button><label for="timeline" class="sr-only">查看动作进度</label><input id="timeline" type="range" min="0" max="1000" value="0" aria-label="查看动作进度"><span id="time">0.0 / 7.3 秒</span></div>
+ <div class="beats"><span>01 窝着</span><span>02 起身</span><span>03 塌腰伸展</span><span>04 慢慢趴回</span></div>
+ <p class="note">这一轮先看圆脸、短耳、体型和动作。后面再按真实照片调整花色、纹路与毛感。移到猫身上轻轻划过，或点击“摸摸它”即可；可以拖动进度条检查每个姿势。</p>
+ <p id="load-error" role="alert" hidden>动作暂时没有加载成功，请刷新后再试。静态模型仍可查看。</p>
+</main><script type="module" src="cat-preview.js"></script></body></html>
