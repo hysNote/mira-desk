@@ -1,0 +1,16 @@
+node_modules/
+build/
+private/
+.env
+.env.*
+!.env.example
+.dev.vars
+.venv/
+__pycache__/
+*.pyc
+*.log
+*.blend
+*.blend1
+*.qt
+.DS_Store
+Thumbs.db
