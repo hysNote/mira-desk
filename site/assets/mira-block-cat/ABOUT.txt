@@ -1,0 +1,6 @@
+Mira block cat — locally authored model and animation
+Original construction script: blender/build_mira_block_cat.py
+Editable source: build/mira-block-cat/mira-block-cat.blend
+Visual direction: user-selected block / voxel cat aesthetic.
+No Sketchfab mesh, texture, or animation data was downloaded or copied into this asset.
+Eight-second sequence: rest, wake and sit, raise left front paw and groom, lower paw, settle into identical rest.
