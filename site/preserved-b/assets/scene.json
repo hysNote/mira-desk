@@ -1,0 +1,175 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "keys": [
+    "about",
+    "resume",
+    "awards",
+    "photos",
+    "life",
+    "travel",
+    "cat",
+    "notebook"
+  ],
+  "surfaces": {
+    "resume": [
+      [
+        714.23,
+        272.24
+      ],
+      [
+        1210.36,
+        238.5
+      ],
+      [
+        1179.22,
+        463.26
+      ],
+      [
+        746.09,
+        502.07
+      ]
+    ],
+    "about": [
+      [
+        730.39,
+        522.63
+      ],
+      [
+        1011.47,
+        536.35
+      ],
+      [
+        1007.15,
+        663.13
+      ],
+      [
+        749.44,
+        648.96
+      ]
+    ]
+  },
+  "cropped": true,
+  "hots": {
+    "about": {
+      "index": 1,
+      "bbox": [
+        703,
+        512,
+        1021,
+        798
+      ],
+      "center": [
+        805,
+        585
+      ],
+      "pixels": 78656,
+      "center_radius": 70.0
+    },
+    "resume": {
+      "index": 2,
+      "bbox": [
+        703,
+        224,
+        1217,
+        567
+      ],
+      "center": [
+        957,
+        370
+      ],
+      "pixels": 124730,
+      "center_radius": 130.0
+    },
+    "awards": {
+      "index": 3,
+      "bbox": [
+        573,
+        481,
+        735,
+        564
+      ],
+      "center": [
+        662,
+        545
+      ],
+      "pixels": 5277,
+      "center_radius": 17.38
+    },
+    "photos": {
+      "index": 4,
+      "bbox": [
+        1227,
+        679,
+        1385,
+        822
+      ],
+      "center": [
+        1295,
+        739
+      ],
+      "pixels": 12162,
+      "center_radius": 47.6
+    },
+    "life": {
+      "index": 5,
+      "bbox": [
+        317,
+        390,
+        582,
+        697
+      ],
+      "center": [
+        423,
+        480
+      ],
+      "pixels": 51458,
+      "center_radius": 71.53
+    },
+    "travel": {
+      "index": 6,
+      "bbox": [
+        1372,
+        730,
+        1508,
+        841
+      ],
+      "center": [
+        1466,
+        791
+      ],
+      "pixels": 10613,
+      "center_radius": 40.35
+    },
+    "cat": {
+      "index": 7,
+      "bbox": [
+        283,
+        729,
+        567,
+        923
+      ],
+      "center": [
+        422,
+        817
+      ],
+      "pixels": 40689,
+      "center_radius": 81.57
+    },
+    "notebook": {
+      "index": 8,
+      "bbox": [
+        1064,
+        599,
+        1237,
+        746
+      ],
+      "center": [
+        1153,
+        665
+      ],
+      "pixels": 18155,
+      "center_radius": 61.98
+    }
+  }
+}
